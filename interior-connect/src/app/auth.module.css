@@ -1,0 +1,193 @@
+/* auth.module.css */
+.authContainer {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  padding: 2rem;
+}
+
+.authCard {
+  width: 100%;
+  max-width: 480px;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="dark"] .authCard {
+  background-color: #1a1a1a;
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+.authHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.authTitle {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.authSubtitle {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputGroup label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.inputField {
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: transparent;
+  color: var(--text-primary);
+  transition: border-color 0.2s;
+}
+
+[data-theme="dark"] .inputField {
+  border-color: #333;
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+[data-theme="dark"] .divider::before,
+[data-theme="dark"] .divider::after {
+  border-bottom-color: #333;
+}
+
+.divider span {
+  padding: 0 10px;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.socialAuth {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.socialBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: transparent;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+[data-theme="dark"] .socialBtn {
+  border-color: #333;
+}
+
+.socialBtn:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="dark"] .socialBtn:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.roleToggle {
+  display: flex;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  padding: 4px;
+  margin-bottom: 1.5rem;
+}
+
+[data-theme="dark"] .roleToggle {
+  background-color: #222;
+}
+
+.roleBtn {
+  flex: 1;
+  padding: 0.6rem;
+  border: none;
+  background: transparent;
+  font-weight: 500;
+  border-radius: 6px;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.roleBtn.active {
+  background-color: #fff;
+  color: var(--primary-color);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+[data-theme="dark"] .roleBtn.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.footerText {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.footerText a {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.forgotPassword {
+  text-align: right;
+  font-size: 0.85rem;
+  color: var(--secondary-color);
+  margin-top: -0.5rem;
+}
